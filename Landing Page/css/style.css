@@ -1,0 +1,387 @@
+@font-face {
+    font-family: "yibaiti";
+    src: url('/Landing\ Page/fonts/msyi-webfont.woff') format('woff');
+}
+
+body {
+    background: linear-gradient(to right,#E5E5E5 0%, #E5E5E5 50%, #1D1D2D 50%, #1D1D2D 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bulat {
+    position: absolute;
+    top: -400px;
+    left: -350px;
+    width: 658px;
+    height: 658px;
+    border: 71px solid #F2F2F2;
+    border-radius: 50%;
+}
+
+.welcome {
+    position: absolute;
+    top: -150px;
+    left: 10px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: #707070;
+    width: 150px;
+    height: 50px;
+    border: 3px solid #707070;
+    transform: rotate(90deg);
+}
+
+.mywebsite {
+    position: absolute;
+    float: left;
+    bottom: 400px;
+    right: 10px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: #CFCFCF;
+    width: 230px;
+    height: 50px;
+    border: 1px solid #CFCFCF;
+    transform: rotate(90deg);
+    opacity: 0%;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar .name {
+    position: absolute;
+    left: 37px;
+    top: 23px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #484848;
+    line-height: 33px;
+}
+
+.navbar .list .left {
+    position: absolute;
+    top: 45px;
+    left: 333px;
+}
+
+.navbar .list .right {
+    position: absolute;
+    top: 45px;
+    right: 88px;
+}
+
+.left li,
+.right li {
+    display: inline-block;
+}
+
+.left li a {
+    padding-right: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #484848;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.right li a {
+    padding-left: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #CFCFCF;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.content {
+    margin: 320px 555px;
+    box-sizing: border-box;
+}
+
+.content .maintext {
+    position: absolute;
+    top: 320px;
+    left: 445px;
+    text-align: center;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.maintext h1 {
+    font-size: 99px;
+    font-weight: bold;
+    color: #F2F2F2;
+    line-height: 132px;
+    letter-spacing: 90px;
+    text-shadow: 0 3px 6px rgba(0, 0,0 ,16%);
+}
+
+.content .textback {
+    position: absolute;
+    top: 300px;
+    left: 550px;
+    text-align: center;
+}
+
+.textback h1 {
+    font-family: "yibaiti";
+    color: #794D92;
+    font-size: 93px;
+    line-height: 86px;
+    letter-spacing: 40px;
+    text-shadow: 0 3px 6px rgba(0, 0,0 ,16%);
+}
+
+.content button {
+    background-color: #794D92;
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    top: 550px;
+    left: 815px;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 500;
+    box-shadow: inset 0 3px 6px rgba(0, 0,0 ,16%);
+}
+
+.content button a {
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color:#E5E5E5;
+    opacity: 0%;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.foot-left {
+    display: inline-block;
+    position: relative;
+    left: 28px;
+    bottom: 42px;
+}
+
+.foot-left p {
+    padding-right: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+    float: left;
+}
+
+.foot-right {
+    position: absolute;
+    right: 88px;
+    bottom: 42px;
+}
+
+.foot-right li {
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.foot-right li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #CFCFCF;
+}
+
+/* gerak gerak manja */
+
+.bulat {
+    animation: bulat 1.8s ease-in-out;
+}
+
+.welcome {
+    animation: side-welcome 4s cubic-bezier(.65,.19,.51,.76) .7s infinite;
+}
+
+.mywebsite {
+    animation: mywebsite 4s cubic-bezier(.65,.19,.51,.76) .7s infinite ;
+}
+
+.list .left a {
+    transition: .3s ease-in-out;
+}
+
+.list .left a:hover {
+    text-shadow: 25px 30px 6px rgba(0,0,0,41%);
+}
+
+.list .right a {
+    transition: .3s ease-in-out;
+}
+
+.list .right a:hover {
+    text-shadow: 25px 30px 6px rgba(255,255,255,41%);
+}
+
+.content button {
+    animation: button 1s cubic-bezier(.38,.2,.46,.96) forwards;
+}
+
+.content button a {
+    animation: buttona 1s cubic-bezier(.38,.2,.46,.96) .6s forwards;
+}
+
+.content .maintext {
+    animation: welcome 2s cubic-bezier(.79,.15,.59,.79) reverse;
+}
+
+.maintext h1 {
+    animation: text 2s cubic-bezier(.79,.15,.59,.79) reverse forwards;
+}
+
+
+.textback h1 {
+    opacity: 0%;
+    animation: textback 1s cubic-bezier(.79,.15,.59,.79) .7s reverse forwards;
+
+}
+/* animation */
+
+@keyframes button {
+    0% {
+        transform: scale(0);
+        width: 0;
+        height: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        width: 300px;
+        height: 60px;
+    }
+}
+
+@keyframes buttona {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes welcome {
+    0% {
+        opacity: 100%;
+        top:  320px;
+    }
+
+    100% {
+        opacity: 0;
+        top: 20px;
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity: 100%;
+        line-height: 132px;
+        letter-spacing: 90px;
+    }
+
+    100% {
+        opacity: 0%;
+        line-height: 0px;
+        letter-spacing: 0px;
+    }
+}
+
+@keyframes textback {
+    0% {
+        opacity: 100%;
+        line-height: 86px;
+        letter-spacing: 40px;
+    }
+
+    
+    100% {
+            opacity: 0%;
+            letter-spacing: 0px;
+            line-height: 0px;
+        }
+    
+}
+
+@keyframes side-welcome {
+    0% {
+        opacity: 0%;
+        top: 50px
+    }
+
+    30% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    70% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+        top: 700px;
+    }
+}
+
+@keyframes mywebsite {
+    0% {
+        opacity: 0%;
+        bottom: 90px
+    }
+
+    30% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    70% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+        bottom: 700px;
+    }   
+}
+
+@keyframes bulat {
+    0% {
+        top: -800px;
+        left: -700px;
+    }
+
+    100% {
+        top: -400px;
+        left: -350px;
+    }
+
+}

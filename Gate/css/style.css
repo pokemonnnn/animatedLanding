@@ -1,0 +1,265 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom left, #28104e, #9854cb);
+    background-repeat: no-repeat;
+}
+
+.content {
+    position: absolute;
+    left: 517px;
+    top: 345px;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 101px;
+    font-weight: 500;
+    color: #E5E5E5;
+    text-shadow: 15px 20px 12px rgba(0, 0, 0, 16%);
+}
+
+.content button {
+    width: 268px;
+    height: 83px;
+    margin-top: 70px;
+    background-color: #562194;
+    border: none;
+    border-radius: 50px;    
+    box-shadow: 15px 20px 13px rgba(0, 0, 0, 16%);
+}
+
+.content a {
+    color: #E5E5E5;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+/* bulat-bulat */
+.bulatb1 {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-color: #310e41;
+    filter: blur(40px);
+    opacity:(64%);
+}
+
+.bulatb2 {
+    position: absolute;
+    top: 120px;
+    left: 1000px;
+    width: 136px;
+    height: 136px;
+    border-radius: 50%;
+    background-color: #310e41;
+    filter: blur(40px);
+    opacity: 64%;
+}
+
+.bulatb3 {
+    position: absolute;
+    top: 700px;
+    right: 100px;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: #310e41;
+    filter: blur(40px);
+    opacity: 100%;
+}
+
+.bulatb4 {
+    position: absolute;
+    top: 800px;
+    left: 1200px;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-color: #310e41;
+    filter: blur(40px)
+}
+
+.bulatb5 {
+    position: absolute;
+    top: 670px;
+    left: 770px;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-color: #310e41;
+    filter: blur(40px)
+}
+
+.bulatb6 {
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-color: #310e41;
+    filter: blur(40px)
+}
+
+/* non-blur */
+
+.bulat1, .bulat2, .bulat3, .bulat4, .bulat5, .bulat6, .bulat7, .bulat8, .bulat9 {
+    z-index: 2;
+}
+
+.bulat1 {
+    position: absolute;
+    top: 87px;
+    right: 0px;
+    width: 287px;
+    height: 287px;
+    border-radius: 50%;
+    border-left: 1px solid rgba(255, 255, 255, 20%);
+    background-color: #452769;
+    box-shadow: inset 25px 30px 47px rgba(117, 73, 172, 100%), 10px 73px 45px -40px rgba(0, 0, 0, 16%);
+}
+
+
+
+
+/* animate selector */
+.bulatb1 {
+    animation: bulatb1 3s ease-in-out infinite alternate;
+}
+
+.bulatb2 {
+    animation: bulatb2 3s ease-in-out 2s infinite alternate;
+}
+
+.bulatb3 {
+    animation: bulatb3 3s ease-in-out .5s infinite alternate;
+}
+
+.bulatb4 {
+    animation: bulatb4 4s ease-in-out 3.7s infinite alternate;
+}
+
+.bulatb5 {
+    animation: bulatb5 2s ease-in-out .8s infinite alternate;
+}
+
+.bulatb6 {
+    animation: bulatb6 3s ease-in-out 4s infinite alternate;
+}
+
+
+
+/* selector non-blur */
+
+.bulat1 {
+    animation: bulat1 5s ease-in-out infinite alternate;
+}
+
+
+
+
+/* animation */
+@keyframes bulatb1 {
+    0% {
+        top: 30px;
+        left: 200px;
+    }
+
+    100% {
+        top: 50px;
+        left: 400px;
+    }
+}
+
+@keyframes bulatb2 {
+    0% {
+        top: 120px;
+        left: 1000px;
+    }
+
+    100% {
+        top: 500px;
+        left: 1400px;
+    }
+}
+
+@keyframes bulatb3 {
+    0% {
+        top: 700px;
+        right: 100px;
+    }
+
+    100% {
+        top: 200px;
+        right: 100px;
+    }
+}
+
+@keyframes bulatb4 {
+    0% {
+        top: 800px;
+        left: 1200px;
+    }
+
+    100% {
+        top: 800px;
+        left: 900px;
+    }
+}
+
+@keyframes bulatb5 {
+    0% {
+        top: 670px;
+        left: 770px;   
+    }
+
+    100% {
+        top: 500px;
+        left: 600px;
+    }
+}
+
+@keyframes bulatb6 {
+    0% {
+        top: 500px;
+        left: 200px;
+    }
+
+    100% {
+        top: 450px;
+        left: 400px;
+    }
+}
+
+
+
+/* non-blur animate */
+@keyframes bulat1 {
+    0% {
+        top: 87px;
+        right: 0px;
+        box-shadow: inset 25px 30px 47px rgba(117, 73, 172, 100%), 10px 73px 45px -40px rgba(0, 0, 0, 16%);
+    }
+
+    100% {
+        top: 37px;
+        right: 500px;
+        box-shadow: inset 25px 30px 47px 30px rgba(117, 73, 172, 100%), 10px 73px 45px -40px rgba(0, 0, 0, 16%);
+    }   
+}
